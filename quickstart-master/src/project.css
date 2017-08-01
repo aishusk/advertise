@@ -1,0 +1,142 @@
+ body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: white;
+	  letter-spacing: normal;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+
+  .carousel-inner img {
+      -webkit-filter: grayscale(50%);
+      filter: grayscale(20%);
+      width: 80%; 
+
+  }
+       .carousel-indicators {
+    text-align: right;
+    float: right;
+    right: 2% !important;
+    left: inherit;
+}
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+
+  .nav-tabs li a {
+      color: #777;
+  }
+  .btn-group
+  {
+	  
+  }
+   
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: black;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: white !important;
+  }
+  .navbar-nav li a:hover {
+      color: white !important;
+  }
+  .navbar-nav li.active a {
+      color: white !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: black;
+  }
+  footer {
+      background-color: black;
+      color: black;
+      padding: 32px;
+  }
+  footer a {
+      color: black;
+  }
+  footer a:hover {
+      color: black;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+    .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      letter-spacing: normal;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .new
+  {
+	  background-color:black;
+	  color:black;
+  }
+  .new1
+  {
+	   background-color:black transparent;
+  color:black;
+ 
+ 
+  }
+.a1
+{
+background-color:white;
+}	

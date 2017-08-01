@@ -1,0 +1,85 @@
+****register****
+{
+    "data": {
+        "userName": "aishwaryask",
+        "firstName": "Aishwarya",
+        "lastName": "sk",
+        "email": "aishu31@gmail.com",
+        "phone": "123456",
+        "message": "Registration successful"
+    }
+}
+***login***
+{
+    "data": {
+        "auth-token": "59803bb98562f3fd3b7ca56d",
+        "userId": "aishwaryask",
+        "itemList": [
+            {
+                "id": "5976c32acd280c999c8f3751",
+                "name": "Cloths"
+            },
+            {
+                "id": "5976c32acd280c999c8f3752",
+                "name": "Furniture"
+            },
+            {
+                "id": "5976c32acd280c999c8f3753",
+                "name": "Mobile"
+            },
+            {
+                "id": "5976c32bcd280c999c8f3754",
+                "name": "Real Estate"
+            }
+        ],
+        "dateConditionList": [
+            {
+                "id": "5976c337cd280c999c8f3757",
+                "condition": "EQUALS"
+            },
+            {
+                "id": "5976c337cd280c999c8f3758",
+                "condition": "BETWEEN"
+            },
+            {
+                "id": "5976c337cd280c999c8f3759",
+                "condition": "ON/AFTER"
+            },
+            {
+                "id": "5976c337cd280c999c8f375a",
+                "condition": "AFTER"
+            },
+            {
+                "id": "5976c337cd280c999c8f375b",
+                "condition": "BEFORE"
+            },
+            {
+                "id": "5976c338cd280c999c8f375c",
+                "condition": "ON/BEFORE"
+            }
+        ]
+    }
+}
+****categories****
+{
+    "data": {
+        "itemList": [
+            {
+                "id": "5976c32acd280c999c8f3751",
+                "name": "Cloths"
+            },
+            {
+                "id": "5976c32acd280c999c8f3752",
+                "name": "Furniture"
+            },
+            {
+                "id": "5976c32acd280c999c8f3753",
+                "name": "Mobile"
+            },
+            {
+                "id": "5976c32bcd280c999c8f3754",
+                "name": "Real Estate"
+            }
+        ]
+    }
+}
