@@ -1,0 +1,34 @@
+
+   
+   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top"style="height:100px;opacity:0.9">
+    <div class="container-fluid">
+         <div class="col-md-2">
+         <input type="text" class="form-control" name="srch-term" id="srch-term" placeholder="what are you looking for" style="margin-right:40px;margin-top:40px;height:40px;width:200px">
+            </div>
+              <div class="col-md-2"style="padding-right:10px;float:left">
+          <!--<label style="font-size:20px;margin-top:40px;color:white;">Category:</label><span style="color:white">Category</span>-->
+        <select #categoryRef style="font-size:15px;margin-top:40px;width:100px;height:40px">
+        <option *ngFor="let category of categories"  style="font-size:15px">{{category.name}}</option>
+        </select>
+      </div>
+        <div class="navbar-header">
+      
+        <a class="navbar-brand" href="index.html"><p style="padding-left:50px;padding-top:30px;font-size:30px">COZYHOMES</p></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul  class="nav navbar-nav navbar-right">
+        
+            <li *ngIf="token==null||flag!=1 "><a href="#"data-toggle="modal" data-target="#myModal"><p style="padding-top:30px;font-size:15px;border-color:white">LOGIN</p></a></li>
+            <li *ngIf="token==null||flag!=1"><a (click)="this.router.navigate(['/register'])" ><p style="padding-top:30px;font-size:15px;border-color:white">REGISTER</p></a></li>
+        <!--<li><a href="exit.html"><p style="padding-top:30px;font-size:15px">LOGOUT</p></a></li>-->
+            <li *ngIf="token!=null||flag!=1"><a (click)="this.router.navigate(['/register'])" ><p style="padding-top:30px;font-size:15px;border-color:white">{{name}}</p></a></li>
+             <li *ngIf="flag==1"><p style="padding-top:40px;font-size:15px;border-color:white">LOGOUT</p></li>
+            <li *ngIf="flag==1"><a (click)="this.router.navigate(['/postAd'])" ><p style="padding-top:40px;font-size:15px;border-color:white">POSTAD</p></a></li>
+          <li class="dropdown"*ngIf="token==null||flag==1 ">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><p style="padding-top:30px;font-size:15px">MORE</p>
+            <ul class="dropdown-menu">
+            <li *ngFor="let category of actions">{{category.name}}</li>
+           
+          </ul>
+         
+       

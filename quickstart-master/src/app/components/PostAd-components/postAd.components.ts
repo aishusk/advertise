@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {AdService} from '../../Services/services'
-
+import {Loginservice} from '../../Services/loginservice'
 @Component({ 
     selector: 'postAd', 
     templateUrl: `./postAd.html`,
@@ -11,7 +11,7 @@ import {AdService} from '../../Services/services'
      categories:Array<any>=[{}];
      Advertisements:Array<any>=[];
      counter:number=0;
-     constructor(private myAdService:AdService)
+     constructor(private myAdService:AdService,private loginservice:Loginservice)
      {
       myAdService.getCategories().subscribe((data)=> { this.categories=data.data.itemList;
            //this.categories.push(data);
@@ -21,17 +21,20 @@ import {AdService} from '../../Services/services'
      addAd(titleVal:any,nameVal:any,categoryVal:any,descVal:any)
      {
          var newAd={
-             id:this.counter,
-            title:titleVal,
-            name:nameVal,
-            category:categoryVal,
-            desc:descVal
+            
+            "title":titleVal,
+            "name":nameVal,
+            
+            "category":categoryVal,
+        "description":descVal
 
          }
-         this.counter++;
-         this.myAdService.postAd(newAd);
-         console.log("addAd",newAd)
          
+         this.loginservice.postAd(newAd).subscribe((data)=>
+         {
+console.log(data);
+         });
+        
          
      }
 
